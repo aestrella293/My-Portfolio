@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
-
+/*--- General ---*/
 body
 {
   overflow-x: hidden;
@@ -12,6 +12,33 @@ body
   margin-top: -3.8rem;
   content: "";
   display: block;
+}
+/*--- Back to top button ---*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #149ddd;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #2eafec;
+  transition: background 0.2s ease-in-out;
 }
 /*--- Navbar ---*/
 .navbar
@@ -86,10 +113,6 @@ body
   width:15%;
   position:absolute;
 }
-
-/*--- Timeline in Experience Section ---*/
-
-/*-- End of Timeline --*/
 
 /*--- Skills Section ---*/
 .jumbotron
@@ -199,6 +222,21 @@ h3.heading
   background: #149ddd;
   color: #fff;
 }
+
+/*--- Footer ---*/
+#footer {
+  padding: 15px;
+  color: #f4f6fd;
+  font-size: 14px;
+  position: center;
+  left: 0;
+  bottom: 0;
+  width: center;
+}
+
+#footer .copyright {
+  text-align: center;
+
 /*--- Media Queries ---*/
 @media (max-width: 767px)
 {
